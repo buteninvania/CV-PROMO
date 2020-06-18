@@ -1,0 +1,29 @@
+.navItem {
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.navItem a {
+    margin: 10px;
+}
+
+.navItem img:hover {
+    background-color: #090808;
+    border-radius: 100%;
+    box-shadow: 1px 2px 3px #797676;
+    transition-duration: 0.6s;
+}
+
+.button {
+    background-color: #090808;
+    border-radius: 100%;
+    box-shadow: 1px 2px 3px #797676;
+}

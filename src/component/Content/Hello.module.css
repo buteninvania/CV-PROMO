@@ -1,0 +1,65 @@
+.greeting {
+    grid-area: g;
+}
+
+.greeting h1 {
+    font-size: 50px;
+}
+.greeting div {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.buttons {
+    grid-area: b;
+}
+
+.buttons button {
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 17px;
+    font-family: sans-serif;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.buttons .file {
+    background-color: #090808;
+    color: white;
+    margin-right: 15px;
+}
+
+.mePhoto {
+    grid-area: p;
+}
+
+.mePhoto img {
+    width: 70%;
+    padding-left: 15%;
+}
+
+.arrowsPhotoButton {
+    grid-area: a;
+    justify-self: center;
+    padding-top: 30px;
+}
+
+.arrowsPhotoButton button {
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.arrowsPhotoButton i {
+    font-size: 30px;
+    padding: 5px 30px 5px 30px;
+}
+
+.helloPage {
+    display: grid;
+    grid-template-areas:
+    "g p"
+    "b p"
+    "b a"
+}

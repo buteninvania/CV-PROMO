@@ -1,0 +1,22 @@
+.headerContent {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 50px 0px;
+}
+
+.headerContent div {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.headerContent img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.headerContent img:hover {
+    box-shadow: 1px 1px 4px #111, 1px 0px 1px #ffffff;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
