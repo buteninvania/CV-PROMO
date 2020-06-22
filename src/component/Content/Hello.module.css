@@ -5,6 +5,7 @@
 .greeting h1 {
     font-size: 50px;
 }
+
 .greeting div {
     font-size: 60px;
     font-weight: bold;
@@ -33,33 +34,85 @@
     grid-area: p;
 }
 
-.mePhoto img {
-    width: 70%;
-    padding-left: 15%;
+.mePhoto .image {
+    display: flex;
+    position: absolute;
+    right: 7%;
+    width: 40%;
+}
+
+.mePhoto .image img {
+    width: 100%;
+    box-shadow: 3px 3px 4px #111;
+}
+
+.mePhoto .image ul {
+    padding: 7px;
+    margin: auto;
+    list-style: none;
+}
+
+.image li {
+    margin-bottom: 15px;
+}
+
+.mePhoto .image ul a {
+    color: #8e8b8b;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.image ul i {
+    transform: rotate(90deg);
+    transition-duration: 0.3s;
+}
+
+.image ul i:hover {
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
+    color: #0e0e0e;
+}
+
+.imgBtn {
+    position: relative;
 }
 
 .arrowsPhotoButton {
-    grid-area: a;
-    justify-self: center;
-    padding-top: 30px;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.arrowsPhotoButton button {
-    margin-right: 20px;
-    background-color: white;
-    border: 1px solid #111;
+.imgBtn .arrowsPhotoButton button {
+    padding: 0;
+    border: 0px;
+    background-color: rgba(196, 185, 185, 0.1);
+    transition-duration: 0.3s;
     cursor: pointer;
+    width: 20%;
+    height: 50px;
+    font-size: large;
 }
 
-.arrowsPhotoButton i {
-    font-size: 30px;
-    padding: 5px 30px 5px 30px;
+.imgBtn .arrowsPhotoButton button:hover {
+    background-color: rgba(196, 185, 185, 0.4);
+    transition-duration: 0.3s;
+    font-size: x-large;
 }
+
+.imgBtn .arrowsPhotoButton i {
+    color: rgba(253, 252, 252, 0.5);
+}
+
 
 .helloPage {
     display: grid;
+    grid-template-columns: 3fr 3fr;
     grid-template-areas:
     "g p"
     "b p"
-    "b a"
+    "b p"
 }

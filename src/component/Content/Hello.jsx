@@ -11,9 +11,8 @@ const Hello = (props) => {
         FaceOnePagePhoto,
         FaceSecondPagePhoto,
     ];
-
     if (props.state.welcome) {
-        return<FirstPage urlImages={urlImages} />
+        return<FirstPage dispatch={props.dispatch} urlImages={urlImages} />
     } else if (props.state.developer) {
         return <SecondPage/>
     } else if (props.state.projects)

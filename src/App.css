@@ -1,18 +1,22 @@
+body {
+    position: relative;
+}
 .app-wrapper {
     display: grid;
-    width: 90%;
-    margin: 5% auto;
+    width: 80%;
+    margin: 2% auto;
     grid-template-areas:
   "n h r"
   "n c r";
-    grid-template-rows: 2fr 8fr;
-    grid-template-columns: 1fr 8fr 2fr;
-}
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 9fr 2fr;
 
+}
 .app-wrapper {
     grid-area: c;
 }
 .rightBlock {
     background-color: black;
     grid-area: r;
+    box-shadow: 3px 4px 7px #ccc;
 }
