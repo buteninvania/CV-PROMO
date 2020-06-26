@@ -1,5 +1,5 @@
-import React from "react";
-import n from "./Nav.module.css"
+import * as React from 'react';
+import n from './Nav.module.css'
 
 const Nav = (props) => {
     const onePageButton = () => {

@@ -1,7 +1,7 @@
 import h from "../Hello.module.css";
 import React, {useState} from "react";
 import {useSpring, animated} from "react-spring";
-import {hireMeActionCreator} from "../../../store/redux-store";
+import {hireMeActionCreator} from "../../../store/hired-reducer";
 
 
 export const FirstPage = (props) => {

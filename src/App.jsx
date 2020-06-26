@@ -3,8 +3,8 @@ import './App.css';
 import Header from "./component/Header/Header";
 import Nav from "./component/Nav/Nav";
 import Hello from "./component/Content/Hello";
-import {backHireMeActionCreator} from "./store/redux-store";
-
+import {backHireMeActionCreator} from "./store/hired-reducer";
+import {AppDispatchType, AppStateType} from "./store/redux-store";
 
 const App = ({state, dispatch}) => {
 
@@ -40,7 +40,7 @@ const App = ({state, dispatch}) => {
                 <Header/>
                 <Nav state={localState} onePage={onePage} secondPage={secondPage} thirdPage={thirdPage}/>
                 <div className={'app-wrapper-content'}>
-                    <Hello dispatch={dispatch} state={localState} />
+                    <Hello dispatch={dispatch} localstate={localState} />
                 </div>
                 <div className={'rightBlock'}></div>
             </div>
@@ -53,3 +53,4 @@ const App = ({state, dispatch}) => {
 }
 
 export default App;
+
