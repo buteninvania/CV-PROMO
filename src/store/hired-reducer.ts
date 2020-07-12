@@ -20,10 +20,11 @@ const hiredReducer = (state = initialState, action: HiredMeActionTypes): Initial
             return state
     }
 }
-type HiredMeActionTypes = HireMeActionCreatorType | BackHireMeActionCreatorType
-type HireMeActionCreatorType = {type: typeof HIRE_ME}
 export const hireMeActionCreator = (): HireMeActionCreatorType => ({type: HIRE_ME})
-type BackHireMeActionCreatorType = {type: typeof BACK_HIRE_ME}
 export const backHireMeActionCreator = ():BackHireMeActionCreatorType => ({type: BACK_HIRE_ME})
 
 export default hiredReducer
+
+type HiredMeActionTypes = HireMeActionCreatorType | BackHireMeActionCreatorType
+type BackHireMeActionCreatorType = {type: typeof BACK_HIRE_ME}
+type HireMeActionCreatorType = {type: typeof HIRE_ME}
